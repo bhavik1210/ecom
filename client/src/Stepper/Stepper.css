@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.Stepper{
+
+    margin-top: 30px;
+    padding: 4px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+    margin-bottom: 20px;
+}
+.StepperMain{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.StepperNum{
+    font-size: 20px;
+    font-weight: 900;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+.StepperName{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.active .StepperNum{
+    background-color: blue;
+}
+.complete .StepperNum{
+    background-color: rgb(20, 220, 20);
+}
+.progressbar{
+    height: 5px;
+    background-color: #ddd;
+    position: absolute;
+    top: 13.5%;
+    left: 58px;
+    right: 50px;
+    z-index: -1;
+}
+.progress{
+    height: 100%;
+    background-color: greenyellow;
+    transition: all 1s linear;
+}
+.btnsnextprev button {
+    padding: 10px 25px;
+    font-size: 10px;
+    color: #fff;
+    background: #F2994A;
+    border: 0;
+    border-radius: 7px;
+    letter-spacing: .5px;
+    font-weight: 200;
+    cursor: pointer;
+    margin: 2px 5px;
+}

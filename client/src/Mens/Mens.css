@@ -1,0 +1,140 @@
+.cards{
+  margin: 10px 0;
+    /* width: 300px; */
+    height: 370px;
+    /* background-color: rgb(219, 219, 219); */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+    padding: 10px;
+}
+.mens{
+  padding: 3px 0;
+}
+.cardimg img:hover  {
+  transform: scale(1.15);
+}
+.highlights{
+  padding: 40px 60px;
+  width: 100%;
+  height: 60px;
+  background-color: #F6F3F9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mens h3{
+  font-size: 16px;
+}
+.cardimg{
+  padding-top: 10px;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    transition: all 2s;
+}
+.cardimg img{
+    width: 100%;
+    height: 200px;
+    mix-blend-mode: multiply;
+    /* mix-blend-mode: darken; */
+    transition: all 2s;
+    /* object-fit: contain; */
+
+    /* mix-blend-mode: color-dodge; */
+    /* mix-blend-mode:multiply; */
+}
+
+
+
+.grid{
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+.CartBtn {
+    margin: auto;
+    width: 140px;
+    height: 40px;
+    border-radius: 12px;
+    border: none;
+    background-color: rgb(255, 208, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: .5s;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.103);
+    position: relative;
+  }
+  
+  .IconContainer {
+    position: absolute;
+    left: -50px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 2;
+    transition-duration: .5s;
+  }
+  
+  .icon {
+    border-radius: 1px;
+  }
+  
+  .text3 {
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(17, 17, 17);
+    z-index: 1;
+    transition-duration: .5s;
+    font-size: 1.04em;
+    font-weight: 600;
+  }
+  
+  .CartBtn:hover .IconContainer {
+    transform: translateX(58px);
+    border-radius: 40px;
+    transition-duration: .5s;
+  }
+  
+  .CartBtn:hover .text3 {
+    transform: translate(10px,0px);
+    transition-duration: .5s;
+  }
+  
+  .CartBtn:active {
+    transform: scale(0.95);
+    transition-duration: .5s;
+  }
+  .content{
+    font-family: "Poppins", sans-serif;
+    
+  }
+
+  @media (max-width:950px) {
+    .grid{
+        grid-template-columns: repeat(3,30%); 
+    }
+    .mens h3{
+      font-size: 14px;
+    }
+    
+}
+
+@media (max-width:600px) {
+    .grid{
+        grid-template-columns: repeat(2,45%); 
+    }
+    
+}
